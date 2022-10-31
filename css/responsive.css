@@ -1,0 +1,212 @@
+/* Mobile & Table */
+@media (max-width: 1023px) {}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1023px) {}
+
+/* Table Lanscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    body{
+        font-size: 50%;
+    }
+    .header-mb{
+        display: flex;
+        justify-content: space-between;
+        padding:5px 15px;
+        align-items: center;
+    }
+    .menu-mobile
+    {
+        color: #00803D;
+   
+    }
+    .menu-mobile i{
+        font-size: 3rem;
+    }
+    .homeevent-wrapper .grid-container
+    {
+        grid-template-columns: auto;
+        grid-template-columns: auto;
+        grid-gap:1rem;
+    }
+    .homescholarship-wrapper .cell-1-2:nth-child(3) .desc, .homescholarship-wrapper .cell-1-2:nth-child(4) .desc {
+        top: 1rem;
+    }
+    .top-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 5px 15px;
+    }
+    .title-image {
+        max-width: 25rem;
+        padding: 0px 0px;
+    }
+    .header-mb img {
+        max-width: 175px;
+        object-fit: cover;
+    }
+    .slidehome h2
+    {
+        font-size: 2rem;
+    }
+    .homeevent-wrapper .homeevent-item:nth-child(1)
+    {
+        grid-column: 1/3;
+        grid-row: 1/3;
+    }
+    .homeevent-wrapper .homeevent-item img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .sendmail__frm input {
+        background-color: #ffffff;
+        text-align: center;
+        width: 55%;
+        float: left;
+        margin-bottom: 1.5rem;
+    }
+    .sendmail__btn {
+        float: left;
+        width: 40%;
+        max-width: 120px;
+        padding: 0px 5px;
+    }
+    .footer-copyright{
+        width: 100%;
+        color: #FFF;
+        border-top: 1px solid #f0f0f0;
+        padding-top: 10px;
+    }
+    .banner img {
+        height: auto;
+        max-height: 100vh;
+        width: 100%;
+        min-height: 50vh;
+        object-fit: cover;
+    }
+    .slider__controls {
+    
+        bottom: 1rem;
+    }
+    .homescholarship-wrapper .desc { 
+        top: 1rem;
+        padding: 0rem 1rem;
+    }
+    .homeevent-wrapper .homeevent-item:nth-child(1) .homeevent-item__name {
+        padding: 0rem 1rem;
+    }
+    .cell-1-1 .item .desc {      
+        top: 0rem;
+        width: 100%;
+        height: 100%;
+        background: #01803dba;
+        padding: 3rem 2rem;
+    }
+    .cell-1-1 .item .desc h2
+    {
+        font-size: 2.5rem;
+    }
+    .footer {
+        padding:0;
+    }
+    .aboutmember_detail .img-member img {
+     
+        min-height: auto;
+    }
+    .aboutmember_detail{
+        display: block;
+    }
+    .aboutmember_detail .img-member {
+        padding: 0;
+        text-align: center;
+    }
+    .fancybox-button.fancybox-close-small {
+        top: -0.5rem !important;
+        right: -0.5rem !important;
+        border: 0.2rem solid #0e0e0e;
+        color: #000 !important;
+        border-radius: 50%;
+        /* width: 3rem; */
+        /* height: 3rem; */
+    }
+    .menutab .menutab-item
+    {
+        width: auto;
+    min-width: 60%;
+    
+    }
+    .menutab {
+        display: inline-flex;
+        overflow: scroll;
+        flex-wrap: nowrap;
+        padding-bottom: 10px;
+    }
+    .scholarship-wrapper .item img{
+        height: auto;
+        max-height: auto;
+    }
+    .attractdetail-wrapper{
+        margin-top: 3rem;
+    }
+    .attractdetail-wrapper .title, .attractdetail-wrapper .meta-title
+    {
+        color: #333;
+    }
+    .attractinfo-wrapper .item {
+        margin: 2rem 2rem 0rem;
+        position: relative;
+    }
+    .attractregister-wrapper .register-ct
+    {
+        width: 100%;
+        padding: 0px 15px;
+    }
+    .news-wrapper .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+    .news-wrapper .news-item {
+        
+        margin: 0.5rem;
+    }
+    .list-news p{
+        display: none;
+    }
+    .list-news .item .img-shine {
+        width: 40%;
+    }
+    .list-news .item .desc {
+        width: 60%;
+        margin-left: 1rem;
+    }
+    .newsdetail-wrapper textarea{
+        margin-left: 0;
+    }
+}
+
+/* Ipad pro */
+
+
+@media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    /* .homenews-wrapper .grid-container {
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 30px;
+    } */
+}
+
+
+/* PC LARGE */
+
+@media (min-width: 1919px) {
+    .grid {
+        width: 100%;
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
