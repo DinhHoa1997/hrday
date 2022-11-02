@@ -261,41 +261,37 @@
     </div>
     <div class="c"></div> 
 </div>
-</div>
 
+    <script>
+        $(function () {
+            var swiper_slide_home = new Swiper('#slide_home', {
+                loop: true,
+                slidesPerView: 1,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                spaceBetween: 0,
+                navigation: {
+                    nextEl: '.homeslide-prev',
+                    prevEl: '.homeslide-next',
+                },
+                speed: 500,
+                spaceBetween: 0,
+            });
 
+            $('#slide_home').on('mouseover', function () {
+                swiper_slide_home.autoplay.stop();
+            });
+            $('#slide_home').on('mouseout', function () {
+                swiper_slide_home.autoplay.start();
+            });
 
-<div class="c"></div>
-<script>
-    $(function () {
-        var swiper_slide_home = new Swiper('#slide_home', {
-            loop: true,
-            slidesPerView: 1,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            spaceBetween: 0,
-            navigation: {
-                nextEl: '.homeslide-prev',
-                prevEl: '.homeslide-next',
-            },
-            speed: 500,
-            spaceBetween: 0,
         });
+    </script>
 
-        $('#slide_home').on('mouseover', function () {
-            swiper_slide_home.autoplay.stop();
-        });
-        $('#slide_home').on('mouseout', function () {
-            swiper_slide_home.autoplay.start();
-        });
 
-    });
-</script>
 
-</div>
-<div class="c"></div>
 <div class="homeinfo-wrapper">
     <div class="c20 "></div>
     <div class="c30 hide-on-mobile"></div>
@@ -847,7 +843,7 @@
                
             </div>
             <div class="c30"></div>
-        </div>
+        
         <script>
             var swiper = new Swiper('.swiper-homepartner', {
                 pagination: {
@@ -879,11 +875,10 @@
             });
     
         </script>
-        
-    </div>
+        </div>
+   
 <!-- doi tac -->
-<div class="c"></div>
-
+</div>
    <!-- footer -->
    <footer class="footer">
     <div class="flex-container  hide-on-pad hide-on-mobile">       
